@@ -6,7 +6,8 @@ config.font = wezterm.font("MesloLGS Nerd Font")
 config.font_size = 15
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
-config.macos_window_background_blur = 10
+-- config.macos_window_background_blur = 10
+config.window_background_opacity = 0.75
 config.window_padding = {
 	left = 5,
 	right = 5,
@@ -24,7 +25,7 @@ local custom_color_scheme = wezterm.color.get_builtin_schemes()["Everforest Ligh
 custom_color_scheme.background = "#000000"
 
 config.color_schemes = {
-	["Custom"] = custom_color_schemem,
+	["Custom"] = custom_color_scheme,
 }
 config.color_scheme = "Custom"
 
